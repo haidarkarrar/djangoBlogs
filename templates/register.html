@@ -1,0 +1,25 @@
+<form method="POST" action="/register">
+    {% csrf_token %}
+
+    <div>
+        <div>
+            <label>username</label>
+            <input type="text" name="username" />
+        </div>
+        <div>
+            <label>email</label>
+            <input type="email" name="email" />
+        </div>
+        <div>
+            <label>password</label>
+            <input type="password" name="password" />
+        </div>
+        <div>
+            <label>confirm password</label>
+            <input type="password" name="confirm_password" />
+        </div>
+        <div>
+            <input type="submit" />
+        </div>
+    </div>
+</form>

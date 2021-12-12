@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Blog</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="{% static 'home/style.css' %}"
+        />
+    </head>
+    <body class="body">
+        <div class="container">
+            <div class="title">
+                <h1>Bloggg</h1>
+            </div>
+        </div>
+        {% for blog in blogs %}
+        <div class="container">
+            <div>
+                <h3>{{blog.title}}</h3>
+            </div>
+            <div>{{blog.date}}</div>
+            <div>{{blog.Description}}</div>
+        </div>
+        {% endfor %}
+    </body>
+</html>

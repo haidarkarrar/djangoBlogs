@@ -1,0 +1,15 @@
+<form method="POST" action="/create">
+    {% csrf_token %}
+    <div>
+        <label>Title</label>
+        <input placeholder="blog title" type="text" name="title" />
+    </div>
+    <div>
+        <label>Description</label>
+        <input placeholder="blog description" type="text" name="description" />
+    </div>
+
+    <div>
+        <input type="submit" />
+    </div>
+</form>
